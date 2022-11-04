@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22043"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:44:24 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MDk6Mjc6MjkgQU07MzAxNg=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MTA6NDQ6MjQgQU07NDszMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calculating the roots from quadratic equation"/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <comment text="all values a b c taken"/>
+            <output expression="&quot;Please enter the value of a in the formulae ax2+bx+c &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter the value of b in the formulae ax2+bx+c &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Please enter the value of c in the formulae ax2+bx+c &quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="alpha" type="Real" array="False" size=""/>
+            <declare name="beta" type="Real" array="False" size=""/>
+            <comment text="declaring alapha and beta value"/>
+            <declare name="rootvalue" type="Real" array="False" size=""/>
+            <assign variable="rootvalue" expression="sqrt(b^2-4*a*c)"/>
+            <comment text="root value calculation"/>
+            <assign variable="alpha" expression="((-1*b)+rootvalue)/(2*a)"/>
+            <assign variable="beta" expression="((-1*b)-rootvalue)/(2*a)"/>
+            <output expression="&quot;The answers of the following equation is :&quot;&amp;alpha&amp; &quot; , &quot; &amp;beta&amp; &quot; . &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

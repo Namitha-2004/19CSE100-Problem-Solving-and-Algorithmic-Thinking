@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22043"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:45:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MDk6NTM6MzQgQU07MzAxMQ=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MTA6NDU6MDQgQU07NTszMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Swapping two number without using another varible"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of the variable a &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the value of the variable b &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a*b"/>
+            <comment text="multipying the values eg (5*6=30)"/>
+            <assign variable="b" expression="a/b"/>
+            <comment text="now we will get (30/6=5)"/>
+            <assign variable="a" expression="a/b"/>
+            <comment text="now we will get (30/5=6)&#13;&#10;"/>
+            <output expression="&quot;Now the values of a is &quot;&amp;a&amp; &quot; and b is &quot; &amp;b&amp; &quot; .&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

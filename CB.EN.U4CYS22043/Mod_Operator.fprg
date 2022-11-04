@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22043"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:42:40 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MTA6MjE6NTAgQU07Mjk5Ng=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MTA6NDI6NDAgQU07NTszMTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calculation of mod without using mod operator"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="divident value"/>
+            <output expression="&quot;Enter the divident value&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the divisor value&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+            <comment text="the quiotent will be taken&#13;&#10;"/>
+            <declare name="remain" type="Integer" array="False" size=""/>
+            <assign variable="remain" expression="a-(b*c)"/>
+            <comment text="reamin=divident-(quoitent*divisor)"/>
+            <output expression="&quot;The mod value of the given a and b value is &quot; &amp;remain&amp; &quot; . &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

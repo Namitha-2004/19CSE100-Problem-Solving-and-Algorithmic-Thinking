@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22043"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:43:44 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MDk6MDY6NDQgQU07MzAxMA=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTEtMDQ7MTA6NDM6NDQgQU07MzszMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="calculation farenheit from celcius&#13;&#10;"/>
+            <declare name="Ctemp" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Celcius value to be converted&quot;" newline="True"/>
+            <comment text="taking c value"/>
+            <input variable="Ctemp"/>
+            <declare name="Ftemp" type="Real" array="False" size=""/>
+            <assign variable="Ftemp" expression="1.8*Ctemp+32"/>
+            <comment text="calculating f value"/>
+            <output expression="&quot;The Farenheit value of the given Celcius value is : &quot;&amp;Ftemp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
