@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:06:47 AM"/>
+        <attribute name="created" value="dXNlcjtERVNLVE9QLUM2MzJWRTE7MjAyMi0xMC0yODswOToyNTo0NCBBTTsyNzI2"/>
+        <attribute name="edited" value="dXNlcjtERVNLVE9QLUM2MzJWRTE7MjAyMi0xMC0yODsxMDowNjo0NyBBTTsyOzI4Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rollno" type="Integer" array="False" size=""/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <declare name="Bloodgrp" type="String" array="False" size=""/>
+            <declare name="Pnum" type="Integer" array="False" size=""/>
+            <declare name="Department" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter your roll number (The last two digits only)&quot;" newline="True"/>
+            <input variable="Rollno"/>
+            <output expression="&quot;Please enter your Name &quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Please enter your Address in sigle line &quot;" newline="True"/>
+            <input variable="Address"/>
+            <output expression="&quot;Please enter your Blood group&quot;" newline="True"/>
+            <input variable="Bloodgrp"/>
+            <output expression="&quot;Please enter your Phone Number (if any code begin with 00---)&quot;" newline="True"/>
+            <input variable="Pnum"/>
+            <output expression="&quot;Please enter your Department to which you have assigned&quot;" newline="True"/>
+            <input variable="Department"/>
+            <output expression="&quot;Student Info&quot;" newline="True"/>
+            <output expression="&quot;The Roll number of the student is &quot;&amp;rollno&amp; &quot; The Name of the student is &quot;&amp;Name&amp;&quot; The Adress of the student is &quot;&amp;Address&amp; &quot; The Blood group of the student is &quot;&amp;Bloodgrp&amp; &quot; The Phone Number of the student is &quot;&amp;Pnum&amp;&#13;&#10;&quot; The Department of the student is &quot;&amp;Department" newline="True"/>
+            <declare name="Sem" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the Semester&quot;" newline="True"/>
+            <input variable="Sem"/>
+            <declare name="Subjectcode" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the subject code&quot;" newline="True"/>
+            <input variable="Subjectcode"/>
+            <declare name="P1" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the periodical 1 marks&quot;" newline="True"/>
+            <input variable="P1"/>
+            <declare name="P2" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the periodical 2 marks&quot;" newline="True"/>
+            <input variable="P2"/>
+            <declare name="Final" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Final Exam marks&quot;" newline="True"/>
+            <input variable="Final"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="P1+P2+Final"/>
+            <declare name="Avg" type="Real" array="False" size=""/>
+            <assign variable="Avg" expression="Total/3"/>
+            <output expression="&quot;The roll number of student is &quot;&amp;rollno&amp; &quot; The subject code here is &quot;&amp;Subjectcode&amp; &quot; The total marks of student is &quot;&amp;Total&amp;&quot; The average of the student is &quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
