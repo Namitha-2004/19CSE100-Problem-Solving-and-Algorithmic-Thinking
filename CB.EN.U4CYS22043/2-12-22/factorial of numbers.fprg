@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22043"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:25:48 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTItMDI7MDk6MDU6MDAgQU07MzI1Ng=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA0MzsyMDIyM01BWUMwMDgwOzIwMjItMTItMDI7MDk6MjU6NDggQU07NDszMzgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <comment text="factorial"/>
+            <output expression="&quot;Please enter the n value&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot; Factorial of numbers &quot;" newline="True"/>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <comment text="fact multiplication"/>
+                <assign variable="fact" expression="fact*i"/>
+            </for>
+            <output expression="&quot;The final value is &quot;&amp;fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
