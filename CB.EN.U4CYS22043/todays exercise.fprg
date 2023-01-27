@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 08:56:48 PM"/>
+        <attribute name="created" value="dXNlcjtERVNLVE9QLUM2MzJWRTE7MjAyMy0wMS0wNjswNjozMjoxMyBQTTsyNzI5"/>
+        <attribute name="edited" value="dXNlcjtERVNLVE9QLUM2MzJWRTE7MjAyMy0wMS0yNzswODo1Njo0OCBQTTs1OzI4NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, p, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the n value for which factorial need to be found&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="1"/>
+            <while expression="i&lt;=n">
+                <declare name="answer" type="Integer" array="False" size=""/>
+                <assign variable="answer" expression="factorial(i)"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Please enter the n value for which fibonnaci need to be found&quot;" newline="True"/>
+            <input variable="p"/>
+            <while expression="j&lt;=p">
+                <assign variable="answer" expression="fibo(p)"/>
+                <assign variable="j" expression="j+1"/>
+            </while>
+            <declare name="hnd, ccont, tstren" type="Real" array="False" size=""/>
+            <declare name="a, count, grade" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <output expression="&quot;Please enter following values for which grade of the steel need to be found&quot;" newline="True"/>
+            <output expression="&quot;Please enter the number of steels the grade need to be assigned&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="count&lt;=a">
+                <output expression="&quot;Enter the hardness of the steel&quot;" newline="True"/>
+                <input variable="hnd"/>
+                <output expression="&quot;Enter the carbon content of the steel&quot;" newline="True"/>
+                <input variable="ccont"/>
+                <output expression="&quot;Enter the tensile strength of the steel&quot;" newline="True"/>
+                <input variable="tstren"/>
+                <assign variable="grade" expression="gradesteel(hnd,ccont,tstren)"/>
+                <assign variable="count" expression="count+1"/>
+            </while>
+        </body>
+    </function>
+    <function name="factorial" type="Integer" variable="fact">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="count, i, fact" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="fact" expression="1"/>
+            <output expression="&quot;We are using this function to find factorial&quot;" newline="True"/>
+            <if expression="n&gt;0">
+                <then>
+                    <while expression="count&lt;=n">
+                        <assign variable="fact" expression="fact*i"/>
+                        <assign variable="i" expression="i+1"/>
+                        <assign variable="count" expression="count+1"/>
+                    </while>
+                    <output expression="&quot;The factorial of the given value is &quot;&amp;fact" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n==0">
+                        <then>
+                            <output expression="&quot;The factorial of 0 is &quot;&amp;fact" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Factorial value cant be found for negative numbers&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="fibo" type="Integer" variable="fvalue">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;We are using this function to find Fibonnaci series&quot;" newline="True"/>
+            <declare name="count, i, j, k, fvalue" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <assign variable="j" expression="0"/>
+            <assign variable="k" expression="1"/>
+            <if expression="n&gt;0">
+                <then>
+                    <output expression="&quot;The fibonnaci value is 0&quot;" newline="True"/>
+                    <output expression="&quot;The fibonnaci value is 1&quot;" newline="True"/>
+                    <while expression="count&lt;=n-2">
+                        <assign variable="fvalue" expression="j+k"/>
+                        <assign variable="j" expression="k"/>
+                        <assign variable="k" expression="fvalue"/>
+                        <assign variable="count" expression="count+1"/>
+                        <output expression="&quot;The fibonnaci value is &quot;&amp;fvalue" newline="True"/>
+                    </while>
+                </then>
+                <else>
+                    <if expression="n==0">
+                        <then>
+                            <assign variable="fvalue" expression="0"/>
+                            <output expression="&quot;The fibonnaci value is 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="fvalue" expression="0"/>
+                            <output expression="&quot;Fibonacci series cant be found for negative numbers&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="gradesteel" type="Integer" variable="grade">
+        <parameters>
+            <parameter name="hdn" type="Real" array="False"/>
+            <parameter name="ccont" type="Real" array="False"/>
+            <parameter name="tstrength" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="grade" type="Integer" array="False" size=""/>
+            <declare name="i, j, k" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="0"/>
+            <assign variable="k" expression="0"/>
+            <if expression="hdn&gt;50">
+                <then>
+                    <assign variable="i" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="ccont&lt;0.7">
+                <then>
+                    <assign variable="j" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="tstrength&gt;5600">
+                <then>
+                    <assign variable="k" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="i==1 &amp;&amp; j==1 &amp;&amp; k==1">
+                <then>
+                    <assign variable="grade" expression="10"/>
+                </then>
+                <else>
+                    <if expression="i==1 &amp;&amp; j==1">
+                        <then>
+                            <assign variable="grade" expression="9"/>
+                        </then>
+                        <else>
+                            <if expression="i==1 &amp;&amp; k==1">
+                                <then>
+                                    <assign variable="grade" expression="7"/>
+                                </then>
+                                <else>
+                                    <if expression="j==1 &amp;&amp; k==1">
+                                        <then>
+                                            <assign variable="grade" expression="8"/>
+                                        </then>
+                                        <else>
+                                            <if expression="i==1||j==1||k==1">
+                                                <then>
+                                                    <assign variable="grade" expression="6"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="grade" expression="5"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;The grade of the steel given is &quot;&amp;grade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
